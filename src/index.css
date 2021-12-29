@@ -1,0 +1,124 @@
+/** @format */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+:root {
+  /* COLORS */
+      /* Colours */
+      --color-primary: #3eb0ef;
+      --color-base: #15171A;
+      --color-secondary: #5B7A81;
+      --color-border: #c7d5d8;
+      --color-bg: #f5f5f5;
+
+
+	/* STYLING */
+	--background-color: hsl(0, 0%, 98%);
+	--border-color: hsl(0, 0%, 97%);
+
+	/* BUTTON & ICON STYLING */
+	--button-color-primary: hsl(85, 54%, 51%);
+	--button-color-secondary: hsl(0, 0%, 2%);
+	--button-color-tertiary: hsl(0, 0%, 98%);
+
+	/* TEXT */
+	--text-color-white: hsl(0, 0%, 98%);
+	--text-color--light-gray: hsl(0, 0%, 98%);
+	--text-color-dark-gray: hsl(0, 0%, 35%);
+	--text-color-black: hsl(0, 0%, 2%);
+
+	/* FOOTER COLOR */
+	--footer-background-color: hsl(220, 27%, 4%);
+	--footer-text-color: hsl(0, 0%, 68%);
+
+	/*  SPACING */
+
+	/* FONT_SIZES */
+	--default-font-size: 1.6rem;
+
+	/* SHADOW */
+	--shadow: 220 27% 4%;
+	--shadow-strength: 1%;
+
+	--box-shadow: 0 -2px 5px 0 hsl(var(--shadow) / calc(var(--shadow-strength) + 5%)),
+		0 1px 1px -2px hsl(var(--shadow) / calc(var(--shadow-strength) + 10%)),
+		0 2px 2px -2px hsl(var(--shadow) / calc(var(--shadow-strength) + 12%)),
+		0 5px 5px -2px hsl(var(--shadow) / calc(var(--shadow-strength) + 13%)),
+		0 9px 9px -2px hsl(var(--shadow) / calc(var(--shadow-strength) + 14%)),
+		0 16px 16px -2px hsl(var(--shadow) / calc(var(--shadow-strength) + 20%));
+}
+
+
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+html {
+	font-size: 62.5%;
+	font-family: Poppins, sans-serif;
+}
+
+body {
+	box-sizing: border-box;
+	background-color: var(--background-color);
+
+
+}
+
+@media only screen and (max-width: 75em) {
+	html {
+		font-size: 56.25%;
+	}
+
+	.header {
+		background: red;
+	}
+}
+@media only screen and (max-width: 56.25em) {
+	html {
+		font-size: 50%;
+	}
+
+	.header {
+		background: yellow;
+	}
+}
+@media only screen and (max-width: 37.5em) {
+	html {
+		font-size: 30%;
+	}
+
+	.header {
+		background: orange;
+	}
+}
+@media only screen and (min-width: 125em) {
+	html {
+		font-size: 75%;
+	}
+
+	.header {
+		background: olive;
+	}
+}
+@media only screen and (max-width: 56.25em) {
+	body {
+		padding: 0;
+	}
+
+	.header {
+		background: greenyellow;
+	}
+}
+::-moz-selection {
+	background-color: var(--main-color);
+	color: var(--main-text-color-white);
+}
+::selection {
+	background-color: var(--main-color);
+	color: var(--main-text-color-white);
+}
