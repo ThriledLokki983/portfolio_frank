@@ -122,3 +122,8 @@ body {
 	background-color: var(--main-color);
 	color: var(--main-text-color-white);
 }
+
+
+.slide-in-left {
+     transform: translateX(0) !important;
+}

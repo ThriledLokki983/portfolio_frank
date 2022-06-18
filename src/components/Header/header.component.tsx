@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Container, Inner, Mast, Banner, Navigation } from "./header.styles";
 import { MastLeft, MastRight, Link, NavLeft, NavRight } from "./header.styles";
-import { NavItems, NavItem, NavLink, NavButton } from "./header.styles";
+import { NavItems, NavItem, NavLink, NavButton, MobileMenu, MobileMenuBtn, MobileMenuIcon, NavIcon, MobileMenuList } from "./header.styles";
 import Icon from "../Icon/icon.component";
 
 interface HeaderProps {
@@ -10,6 +10,7 @@ interface HeaderProps {
 
 function Header() {
     const [isHome, setIsHome] = useState(true);
+    	const [isOpen, setIsOpen] = useState(false);
 
     return (
         <Container>
@@ -35,6 +36,32 @@ function Header() {
                             <Icon name="email" color="white" size={18} />
                         </Link>
                     </MastRight>
+                    <MobileMenu>
+						<MobileMenuBtn type="checkbox" id="menu__btn" />
+						<MobileMenuIcon htmlFor="menu__btn">
+							<NavIcon onClick={() => setIsOpen(!isOpen)} />
+						</MobileMenuIcon>
+					</MobileMenu>
+                    {isOpen && (<MobileMenuList className={isOpen ? 'slide-in-left' : ''}>
+                            <NavItem>
+                                <NavLink href="/">Home</NavLink>
+                            </NavItem>
+                            <NavItem>
+                                <NavLink href="#projects">Publications</NavLink>
+                            </NavItem>
+                            <NavItem>
+                                <NavLink href="#contact">Research</NavLink>
+                            </NavItem>
+                            <NavItem>
+                                <NavLink href="#contact">Teaching</NavLink>
+                            </NavItem>
+                            <NavItem>
+                                <NavLink href="#resume">Resume</NavLink>
+                            </NavItem>
+                            <NavItem>
+                                <NavLink href="#resume">Contact</NavLink>
+                            </NavItem>
+                         </MobileMenuList>)}
                 </Mast>
                 {isHome ? (
                     <Banner>
@@ -55,7 +82,7 @@ function Header() {
                                 <NavLink href="#projects">Publications</NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink href="#contact">Reaserch</NavLink>
+                                <NavLink href="#contact">Research</NavLink>
                             </NavItem>
                             <NavItem>
                                 <NavLink href="#contact">Teaching</NavLink>
