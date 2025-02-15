@@ -33,6 +33,17 @@ class Renderer {
 		element.addEventListener(event, callback);
 	}
 
+	attachEvent(id: string, event: string, callback: EventListener) {
+		const element = document.getElementById(id);
+
+		if (!element) {
+			console.error(`Element with id "${id}" not found.`);
+			return;
+		}
+
+		element.addEventListener(event, callback);
+	}
+
 	clear(id: string) {
 		const container = document.querySelector(`#${id}`);
 

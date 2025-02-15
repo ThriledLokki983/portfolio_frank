@@ -3,15 +3,29 @@ main.main-content {
 }
 
 .content {
-	inline-size: 100%;
+	inline-size: min(100%, var(--content-max-width)); block-size: inherit;
+	margin-inline: auto;
 }
 
-section#nav {
-	grid-column: nav-start; block-size: 100%; inline-size: var(--breakout-size);
-	position: sticky; inset: 0 auto auto 0; z-index: 1; height: 100dvh;
+section#home {
+	display: flex; justify-content: space-between; align-items: flex-start;
+	block-size: 100dvh; gap: 2rem;
+}
 
-	> nav {
-		display: flex; place-content: flex-start; place-items: center;
-		block-size: inherit; inline-size: inherit;
+#home > .home__left {
+	flex: 1;
+}
+#home > .home__right {
+	flex: 1;
+	filter: grayscale(95%);
+
+	> img {
+		inline-size: 100%; block-size: 100%; object-fit: cover;
+		object-position: top;
 	}
+}
+
+#home > .home__left, #home > .home__right {
+	max-inline-size: 50%; block-size: 100dvh; position: relative;
+	display: flex; flex-direction: column; place-content: center;
 }
