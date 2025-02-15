@@ -12,6 +12,14 @@ const NavItems = `
 				</li>`).join('')
 			}
 		</ul>
+		<button
+			class="toggle mobile-nav-toggle"
+			aria-controls="primary-navigation"
+			aria-expanded="false"
+			aria-label="Menu"
+		>
+			<span class="toggle-btn"></span>
+		</button>
 	</nav>
 `
 

@@ -1,11 +1,20 @@
 section#home {
 	display: flex; justify-content: space-between; align-items: flex-start;
 	block-size: 100dvh; gap: 5rem; transform: translateY(-7rem);
+
+	@media (width <= 480px) {
+		flex-direction: column; transform: translateY(0);
+		padding-inline: 1rem; margin-block-start: 3rem;
+	}
 }
 
 #home > .home__left, #home > .home__right {
 	flex: 1; max-inline-size: 50%; block-size: 100dvh; position: relative;
 	display: flex; flex-direction: column; place-content: center;
+
+	@media (width <= 480px) {
+		max-inline-size: 100%; block-size: auto;
+	}
 }
 
 #home > .home__right {
@@ -22,6 +31,10 @@ section#home {
 		content: ""; position: absolute; inset: 0 auto auto 0; z-index: 2;
 		inline-size: 100%; block-size: 30%; pointer-events: none; transform: translateY(-20rem);
 		background: linear-gradient(to bottom, rgba(255,249,229,0.75) 20%, rgba(255, 249, 229, 0.0000001) 100%);
+
+		@media (width <= 480px) {
+			display: none;
+		}
 	}
 
 	> div:last-of-type {
@@ -50,6 +63,20 @@ section#home {
 		color: var(--text-2); line-height: 1;
 		font-size: 3.3rem; font-weight: 300; font-family: var(--font-secondary);
 	}
+
+	@media (width <= 480px) {
+		h1 {
+			font-size: 5rem;
+
+			> small {
+				font-size: 2rem;
+			}
+		}
+
+		> span {
+			font-size: 2rem;
+		}
+	}
 }
 
 #home > .home__left {
@@ -58,6 +85,9 @@ section#home {
 	> p {
 		font-size: 2rem; font-weight: 300; font-family: var(--font-tertiary);
 		color: var(--text-2); line-height: 1.5; inline-size: 95%;
+		@media (width <= 480px) {
+			inline-size: 100%; font-size: 1.6rem;
+		}
 	}
 }
 

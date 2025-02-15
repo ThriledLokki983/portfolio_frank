@@ -55,4 +55,8 @@ body {
 	min-block-size: 100dvh; inline-size: 100dvw;
 	display: flex; flex-direction: column; place-content: flex-start;
 	scrollbar-color: var(--brand); scrollbar-width: thin; overscroll-behavior: contain;
+
+	@media (width <= 480px) {
+		overflow: auto;
+	}
 }
