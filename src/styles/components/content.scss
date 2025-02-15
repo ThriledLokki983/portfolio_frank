@@ -1,0 +1,17 @@
+main.main-content {
+	height: 100%; flex: 1;
+}
+
+.content {
+	inline-size: 100%;
+}
+
+section#nav {
+	grid-column: nav-start; block-size: 100%; inline-size: var(--breakout-size);
+	position: sticky; inset: 0 auto auto 0; z-index: 1; height: 100dvh;
+
+	> nav {
+		display: flex; place-content: flex-start; place-items: center;
+		block-size: inherit; inline-size: inherit;
+	}
+}

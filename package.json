@@ -1,0 +1,21 @@
+{
+  "name": "portfolio_frank",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "start-dev": "vite --port=3000",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.4",
+    "sass-embedded": "^1.85.0",
+    "typescript": "~5.7.2",
+    "vite": "^6.1.0"
+  },
+  "dependencies": {
+    "open-props": "^1.7.12",
+    "postcss-jit-props": "^1.0.15"
+  }
+}
