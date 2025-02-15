@@ -27,20 +27,20 @@
 		}
 
 		nav > .nav__list > .nav__item > .nav__link {
-			display: flex; color: var(--text-2); font-size: 1.75rem; text-decoration: none;
-			padding: 0.5rem 1rem; font-weight: 400;
+			display: flex; color: var(--text-1); font-size: 1.75rem; text-decoration: none;
+			padding: 0.5rem 1rem; font-weight: 500;
 			font-family: var(--font-nav); font-size: 1.8rem;
 
 			transition: color 100ms ease-in, font-weight 100ms ease-in;
 
 			&[aria-selected="true"] {
-				color: var(--accent-1); font-weight: 600;
+				color: var(--accent-1); font-weight: 700;
 			}
 
 			&[aria-selected="true"]::after {
 				content: ""; position: absolute; bottom: 0; left: 0; right: 0;
 				height: 3px; background-color: var(--accent-1); color: var(--accent-1);
-				inline-size: 30%; margin-inline-start: 55%; border-radius: 10px;
+				inline-size: 20%; margin-inline-start: 65%; border-radius: 10000px;
 			}
 		}
 
