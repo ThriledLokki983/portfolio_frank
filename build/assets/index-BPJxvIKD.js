@@ -50,4 +50,4 @@
 `,m=`
 	${u}
 `;class p{constructor(){}render(e,a){const o=document.getElementById(e);if(!o){console.error(`Element with id "${e}" not found.`);return}o.innerHTML=a}renderWithEvent(e,a,o,n){const t=document.getElementById(e);if(!t){console.error(`Element with id "${e}" not found.`);return}t.innerHTML=a;const i=document.getElementById(e);if(!i){console.error(`Element with id "${e}" not found.`);return}i.addEventListener(o,n)}attachEvent(e,a,o){const n=document.getElementById(e);if(!n){console.error(`Element with id "${e}" not found.`);return}n.addEventListener(a,o)}clear(e){const a=document.querySelector(`#${e}`);if(!a){console.error(`Element with id "${e}" not found.`);return}a.innerHTML=""}}const s=new p;s.render("header",d);s.render("home",m);s.attachEvent("navigation","click",r=>{r.preventDefault();const e=r.target;e.tagName==="A"&&(document.querySelectorAll(".nav__link").forEach(o=>o.setAttribute("aria-selected","false")),e.setAttribute("aria-selected","true"))});
-//# sourceMappingURL=index-D_CmD2cD.js.map
+//# sourceMappingURL=index-BPJxvIKD.js.map
