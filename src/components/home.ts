@@ -1,6 +1,3 @@
-import linkedIn from '../assets/icons/linked-in.svg';
-
-
 const SOCIAL_LINKS = [
 	{
 		name: 'LinkedIn',
