@@ -22,3 +22,34 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# IDE
+.idea
+*.iml
+
+# OS
+.DS_Store
+
+# Cache
+.cache
+.cache-loader
+.cache-loader-*
+.cache-loader-*/**
+.cache-loader-*/**
+.cache-loader-*/**/**
+.cache-loader-*/**/**/**
+
+# Dependency directories
+node_modules
+jspm_packages
+
+# Build files
+build
+dist
+dist-ssr
+
+# Vite
+.vite
+
+
+
