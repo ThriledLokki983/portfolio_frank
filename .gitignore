@@ -44,7 +44,6 @@ node_modules
 jspm_packages
 
 # Build files
-build
 dist
 dist-ssr
 
