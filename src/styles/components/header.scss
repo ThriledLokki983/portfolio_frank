@@ -16,7 +16,7 @@
 
 			> a {
 				display: flex; align-items: center;
-				inline-size: auto; block-size: 3rem;
+				inline-size: auto; block-size: 3rem; margin-inline-start: 1.5rem;
 				font-family: var(--font-nav); font-size: 1.8rem;
 
 				@media (width <= 480px) {
