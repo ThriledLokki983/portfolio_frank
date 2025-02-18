@@ -1,0 +1,88 @@
+.publications {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  margin-block-start: 2.5rem;
+}
+
+.publications li.publication__item {
+  margin: 0;
+  list-style-type: none;
+  background: rgba(181, 181, 179, 0.3);
+  padding: 3rem;
+  border-radius: 8px;
+}
+.publications li.publication__item > div h3 {
+  color: var(--accent-1);
+  line-height: 1;
+  font-size: 2.4rem;
+  font-weight: 600;
+  font-family: var(--font-tertiary);
+}
+.publications li.publication__item > div span {
+  color: var(--text-2);
+  font-size: 2rem;
+  font-weight: 300;
+}
+.publications li.publication__item > div span > strong {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.publications li.publication__item > footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.publications li.publication__item > footer > ul.publishers {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  margin-block-start: 1rem;
+  align-items: center;
+}
+.publications li.publication__item > footer > ul.publishers > li {
+  background: transparent;
+}
+.publications li.publication__item > footer > ul.publishers > li > span {
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+.publications li.publication__item > footer > ul.publishers > li:nth-of-type(2) > span {
+  font-weight: 500;
+}
+.publications li.publication__item > footer > ul.links {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  margin-block-start: 1rem;
+  padding-inline-end: 2rem;
+  align-items: center;
+}
+.publications li.publication__item > footer > ul.links > li {
+  background: transparent;
+}
+.publications li.publication__item > footer > ul.links > li:last-child > a > svg {
+  fill: none;
+  inline-size: 1.5rem;
+  block-size: 1.5rem;
+}
+.publications li.publication__item > footer > ul.links > li > a {
+  color: var(--accent-1);
+  font-size: 1.6rem;
+  font-weight: 300;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.publications li.publication__item > footer > ul.links > li > a > svg {
+  fill: var(--accent-1);
+  inline-size: 2.5rem;
+  block-size: 2.5rem;
+}
+.publications li.publication__item > footer > ul.links > li:hover > a > svg {
+  color: var(--text-1);
+}
+.publications li.publication__item > footer > ul.links > li:not(:last-child) {
+  margin-inline-end: 1rem;
+}
