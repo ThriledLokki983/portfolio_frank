@@ -9,7 +9,7 @@ section#home {
 }
 
 #home > .home__left, #home > .home__right {
-	flex: 1; max-inline-size: 50%; block-size: 100dvh; position: relative;
+	block-size: 100dvh; position: relative;
 	display: flex; flex-direction: column; place-content: center;
 
 	@media (width <= 480px) {
@@ -19,10 +19,12 @@ section#home {
 
 #home > .home__right {
 	transform: translateY(-10rem);
+	flex: 1 1 60%;
 
 	> img {
 		inline-size: 100%; block-size: 100%; object-fit: cover;
 		object-position: top; filter: grayscale(95%) hue-rotate(180deg);
+		transform: scaleX(-1);
 
 		/* Masking effect to fade out the top */
 		// -webkit-mask-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 5%, rgba(255, 255, 255, 1) 10%);
@@ -33,6 +35,19 @@ section#home {
 		content: ""; position: absolute; inset: 0 auto auto 0; z-index: 2;
 		inline-size: 100%; block-size: 30%; pointer-events: none; transform: translateY(-20rem);
 		background: linear-gradient(to bottom, rgba(255,249,229,0.75) 20%, rgba(255, 249, 229, 0.0000001) 100%);
+
+		@media (width <= 480px) {
+			display: none;
+		}
+
+
+	}
+
+	&::after {
+		content: "";
+		position: absolute; inset: auto 0 auto auto; z-index: 1;
+		inline-size: 5px; block-size: 100%;
+		background: linear-gradient(to top, var(--accent-1), transparent);
 
 		@media (width <= 480px) {
 			display: none;
@@ -84,10 +99,11 @@ section#home {
 #home > .home__left {
 	display: flex; flex-direction: column;
 	padding-inline-start: 1.5rem;
+	flex: 1 1 40%;
 
 	> p {
 		font-size: 1.6rem; font-weight: 300; font-family: var(--font-tertiary);
-		color: var(--text-2); line-height: 1.5; inline-size: 95%;
+		color: var(--text-2); line-height: 1.5; inline-size: 100%;
 
 		@media (width <= 480px) {
 			inline-size: 100%; font-size: 1.6rem;

@@ -42,6 +42,7 @@
 .navigation > section#header > .logo > a > img {
   block-size: 90%;
   inline-size: auto;
+  margin-inline-start: 3rem;
 }
 @media (width <= 480px) {
   .navigation > section#header > .logo > a > img {

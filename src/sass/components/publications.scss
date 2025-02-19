@@ -1,20 +1,18 @@
-
-
-
 .publications {
   margin: 0; padding: 0; list-style-type: none;
-  margin-block-start: 2.5rem;
+  margin-block-start: 2.5rem; overflow: scroll;
 }
 
 .publications li.publication__item {
   margin: 0; list-style-type: none;
   background: rgba(181, 181, 179, 0.3);
-  padding: 3rem; border-radius: 8px;
+  padding: 3rem; border-radius: 8px; margin-block-end: 1rem;
 
   > div h3 {
     color: var(--accent-1); line-height: 1;
     font-size: 2.4rem; font-weight: 600;
     font-family: var(--font-tertiary);
+    inline-size: 90%;
   }
 
   > div span {
@@ -30,7 +28,7 @@
 
     > ul.publishers {
       margin: 0; padding: 0; list-style-type: none;
-      display: flex; margin-block-start: 1rem; align-items: center;
+      display: flex; margin-block-start: 0rem; align-items: center;
 
       > li {
         background: transparent;
@@ -54,7 +52,7 @@
           background: transparent;
 
           &:last-child > a > svg {
-            fill: none;
+            fill: none; stroke-width: 2px;
             inline-size: 1.5rem; block-size: 1.5rem;
           }
 

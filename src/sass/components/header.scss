@@ -25,6 +25,7 @@
 
 				> img {
 					block-size: 90%; inline-size: auto;
+					margin-inline-start: 3rem;
 
 					@media (width <= 480px) {
 						block-size: 90%;
