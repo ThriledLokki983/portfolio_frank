@@ -9,6 +9,8 @@
 @media (width <= 480px) {
   .navigation {
     background-color: rgb(255, 249, 229);
+    block-size: calc(var(--header-size) + 2rem);
+    box-shadow: 0px 4px 50px 0px rgba(0, 0, 0, 0.2);
   }
 }
 .navigation > section#header {
@@ -34,11 +36,6 @@
   font-family: var(--font-nav);
   font-size: 1.8rem;
 }
-@media (width <= 480px) {
-  .navigation > section#header > .logo > a {
-    block-size: 2rem;
-  }
-}
 .navigation > section#header > .logo > a > img {
   block-size: 90%;
   inline-size: auto;
@@ -46,7 +43,8 @@
 }
 @media (width <= 480px) {
   .navigation > section#header > .logo > a > img {
-    block-size: 90%;
+    block-size: 100%;
+    margin-inline-start: 0rem;
   }
 }
 @media (width <= 480px) {
@@ -55,6 +53,7 @@
   }
   .navigation > section#header > .logo > a {
     block-size: 1.8rem;
+    margin-inline-start: 0;
   }
 }
 .navigation > section#header nav > .nav__list {
