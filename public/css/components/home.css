@@ -9,7 +9,7 @@ section#home {
   section#home {
     flex-direction: column;
     transform: translateY(0);
-    padding-inline: 1rem;
+    padding-inline: 1.25rem;
     margin-block-start: 3rem;
   }
 }

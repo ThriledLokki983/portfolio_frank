@@ -7,9 +7,9 @@ export class ListItem {
 	}
 
 	renderPublication() {
-		const content = this.listItems.sort((a, b) => {
-			Number(a.year) < Number(b.year)
-		}).map(({ title, authors, journal, year, download, link }) => `
+		const content = this.listItems?.sort((a, b) =>
+			parseInt(b.year) - parseInt(a.year)
+		).map(({ title, authors, journal, year, download, link }) => `
 			<li class="publication__item">
 				<div>
 					<h3>${title}</h3>

@@ -7,9 +7,9 @@ export class ListItem {
 	}
 
 	renderPublication() {
-		const content = this.listItems.sort((a, b) => {
-			Number(a.year) < Number(b.year)
-		}).map(({ title, authors, journal, year, download, link }) => `
+		const content = this.listItems?.sort((a, b) =>
+			parseInt(b.year) - parseInt(a.year)
+		).map(({ title, authors, journal, year, download, link }) => `
 			<li class="publication__item">
 				<div>
 					<h3>${title}</h3>
@@ -17,13 +17,7 @@ export class ListItem {
 				</div>
 				<footer>
 					<ul class="publishers">
-						${authors.map(author => `
-								<li>
-									<span>
-										${author}&nbsp;
-									</span>
-								</li>
-							`).join('')}
+						${authors.map(author => `<li><span>${author}&nbsp;</span></li>`).join('')}
 					</ul>
 					<ul class="links">
 						${ICONS.map((icon, index) => `
@@ -40,6 +34,9 @@ export class ListItem {
 			</li>
 		`).join('');
 
-		this.container.insertAdjacentHTML('beforeend', content);
+		if (!this.container) {
+			console.warn('No container found............');
+		}
+		this.container?.insertAdjacentHTML('beforeend', content);
 	}
 }
