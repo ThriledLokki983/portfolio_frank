@@ -130,6 +130,8 @@ section#home {
     font-size: 1.8rem;
     text-align: left;
     font-weight: 500;
+    margin-block-start: 0.25rem;
+    line-height: 1;
   }
   .home__header > span > small {
     display: inline;
