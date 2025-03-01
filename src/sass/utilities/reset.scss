@@ -64,3 +64,18 @@ body {
 @view-transition {
 	navigation: auto;
 }
+
+.coming__soon {
+	display: flex; place-content: center; place-items: center; flex-wrap: wrap;
+	block-size: 75%; inline-size: 100%; flex-flow: column; gap: 1rem;
+
+	> h1 {
+		font-size: 3rem; font-weight: 600; font-family: var(--font-secondary);
+		color: var(--text-1); line-height: 1; text-align: center;
+	}
+
+	> p {
+		font-size: 2rem; font-weight: 300; font-family: var(--font-secondary);
+		color: var(--text-2); line-height: 1.5;
+	}
+}
