@@ -29,5 +29,3 @@ toggleButton.addEventListener('click', (e) => {
 	button.setAttribute('aria-expanded', !expanded);
 	navigation.setAttribute('data-mobile-expanded', !expanded);
 });
-
-console.log('navigation.js loaded')

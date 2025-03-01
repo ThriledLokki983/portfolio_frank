@@ -25,9 +25,8 @@ export const toggleNavigation = (navList) => {
 
 toggleButton.addEventListener('click', (e) => {
 	const button = e.target.closest('button');
-	const expanded = button.toggleAttribute('aria-expanded') === 'true' || false;
+	const expanded = button.getAttribute('aria-expanded') === 'true' || false;
 	button.setAttribute('aria-expanded', !expanded);
 	navigation.setAttribute('data-mobile-expanded', !expanded);
 });
 
-console.log('navigation.js loaded')
