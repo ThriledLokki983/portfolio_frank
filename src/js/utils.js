@@ -7,7 +7,9 @@ export class ListItem {
 	}
 
 	renderPublication() {
-		const content = this.listItems.map(({ title, authors, journal, year, download, link }) => `
+		const content = this.listItems.sort((a, b) => {
+			Number(a.year) < Number(b.year)
+		}).map(({ title, authors, journal, year, download, link }) => `
 			<li class="publication__item">
 				<div>
 					<h3>${title}</h3>
@@ -26,7 +28,7 @@ export class ListItem {
 					<ul class="links">
 						${ICONS.map((icon, index) => `
 							<li>
-								<a href="${index === 0 ? download : link}" aria-labelledby="${index === 0 ? 'Download' : 'View'} article">
+								<a disabled href="${index === 0 ? download : link}" aria-labelledby="${index === 0 ? 'Download' : 'View'} article">
 									<svg class="icon">
 										<use xlink:href="assets/icons/sprites.svg#${icon}"></use>
 									</svg>

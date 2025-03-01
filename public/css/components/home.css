@@ -30,7 +30,7 @@ section#home {
 
 #home > .home__right {
   transform: translateY(-10rem);
-  flex: 1 1 60%;
+  flex: 1 1 50%;
 }
 #home > .home__right > img {
   inline-size: 100%;
@@ -103,9 +103,13 @@ section#home {
 .home__header > span {
   color: var(--text-2);
   line-height: 1;
-  font-size: 2.8rem;
+  font-size: 2.2rem;
   font-weight: 300;
   font-family: var(--font-secondary);
+}
+.home__header > span:last-of-type {
+  margin-block-start: 0.5rem;
+  font-size: 2rem;
 }
 @media (width <= 480px) {
   .home__header h1 {
@@ -123,10 +127,10 @@ section#home {
   display: flex;
   flex-direction: column;
   padding-inline-start: 1.5rem;
-  flex: 1 1 40%;
+  flex: 1 1 50%;
 }
 #home > .home__left > p {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   font-weight: 300;
   font-family: var(--font-tertiary);
   color: var(--text-2);

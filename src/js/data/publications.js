@@ -2,7 +2,7 @@ export const PUBLICATIONS = [
 	{
 		title: 'Can a book make you happy? Predicting emotional links between genre, plot, and reader response.',
 		subtitle: 'Journal of Cultural Analytics',
-		year: '2021',
+		year: 'Accepteds',
 		authors: ['Pianzola, F., Srishti S.,', '& Tsiwah, F.'],
 		download: 'assets/pdfs/Can_a_book_make_you_happy.pdf',
 		link: 'https://journalofculturalanalytics.org/index.php/jca/article/view/310'
