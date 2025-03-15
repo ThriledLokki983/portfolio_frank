@@ -1,7 +1,7 @@
 'use strict';
 
 import { toggleNavigation } from './navigation.js';
-import './publications.js';
+// import './publications.js';
 
 
 const HOMEPAGE_KEY = '/';
